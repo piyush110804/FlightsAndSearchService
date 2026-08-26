@@ -13,12 +13,12 @@ const ApiRoutes=require('./routers/index');
  app.use('/api',ApiRoutes);
   app.listen(PORT,async ()=>{
     console.log(`server started at port ${PORT}`);
-  const city = await City.findByPk(6);
-  const airports=await city.getAirports();
+  //const city = await City.findByPk(6);
+  //const airports=await city.getAirports();
 
 
-    console.log(airports);
-  })
+   // console.log(airports);
+  }) 
 
  }
  SetupAndStartServer();
